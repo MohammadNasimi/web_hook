@@ -3,6 +3,8 @@ from flask import request, jsonify
 from .models import Notes
 from ..exceptions import resource_bad_request
 
+from .helpers import store_alert, Send_notification
+
 notes_blueprint = Blueprint('notes', __name__)
 
 
@@ -64,3 +66,20 @@ def delete_note(note_id):
         return jsonify({"delete": note}),204
     return jsonify({"error": "note not found"}), 404
 
+@notes_blueprint.route('/alerts', methods=['POST'])
+def web_hook():
+    if not request.json or "alerts" not in request.json:
+        return jsonify({"error": "alerts is required"}), 400
+    alerts = request.json['alerts']
+    try:
+        for alert in alerts:
+            team = alert["labels"].get("team", None)
+            severity = alert["labels"].get("severity", None)
+            summary = alert["annotations"].get("summary", None)
+            description = alert["annotations"].get("description", None)
+            store_alert(team, severity, summary, description)
+            Send_notification(team, severity, summary, description)
+        return jsonify({"alert store":"ok"}), 200
+    except Exception as e:
+        return jsonify({"error": e}), 400
+    
