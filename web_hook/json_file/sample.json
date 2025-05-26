@@ -1,0 +1,77 @@
+{
+
+    "receiver": "webhook",
+  
+    "status": "firing",
+  
+    "alerts": [
+  
+      {
+  
+        "status": "firing",
+  
+        "labels": {
+  
+          "alertname": "PrometheusJobMissing",
+  
+          "job": "prometheus",
+  
+          "severity": "warning",
+  
+          "team": "infra_sre",
+  
+          "value": "some_value"
+  
+        },
+  
+        "annotations": {
+  
+          "summary": "Prometheus job missing (instance localhost:9090)",
+  
+          "description": "A Prometheus job has disappeared VALUE = some_value"
+  
+        },
+  
+        "startsAt": "2023-06-11T09:52:26.739266876+02:00",
+  
+        "endsAt": "0001-01-01T00:00:00Z",
+  
+        "generatorURL": "http://example.com:9090/graph?g0.expr=absent(up{job=\"prometheus\"})&g0.tab=1"
+  
+      }
+  
+    ],
+  
+    "groupLabels": {
+  
+      "alertname": "PrometheusJobMissing"
+  
+    },
+  
+    "commonLabels": {
+  
+      "alertname": "PrometheusJobMissing",
+  
+      "job": "prometheus",
+  
+      "severity": "critical",
+  
+      "team": "infra_sre",
+  
+      "value": "some_value"
+  
+    },
+  
+    "commonAnnotations": {
+  
+      "summary": "Prometheus job missing (instance localhost:9090)",
+  
+      "description": "A Prometheus job has disappeared\n  VALUE = some_value"
+  
+    },
+  
+    "externalURL": "http://example.com:9093",
+  
+    "version": "4"
+  
+  }

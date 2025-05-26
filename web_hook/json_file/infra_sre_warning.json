@@ -1,0 +1,68 @@
+[
+    {
+        "team": "infra_sre",
+        "serverity": "warning",
+        "summary": "Prometheus job missing (instance localhost:9090)",
+        "description": "A Prometheus job has disappeared VALUE = some_value"
+    },
+    {
+        "team": "infra_sre",
+        "serverity": "warning",
+        "summary": "Prometheus job missing (instance localhost:9090)",
+        "description": "A Prometheus job has disappeared VALUE = some_value"
+    },
+    {
+        "team": "infra_sre",
+        "serverity": "warning",
+        "summary": "Prometheus job missing (instance localhost:9090)",
+        "description": "A Prometheus job has disappeared VALUE = some_value"
+    },
+    {
+        "team": "infra_sre",
+        "serverity": "warning",
+        "summary": "Prometheus job missing (instance localhost:9090)",
+        "description": "A Prometheus job has disappeared VALUE = some_value"
+    },
+    {
+        "team": "infra_sre",
+        "serverity": "warning",
+        "summary": "Prometheus job missing (instance localhost:9090)",
+        "description": "A Prometheus job has disappeared VALUE = some_value"
+    },
+    {
+        "team": "infra_sre",
+        "serverity": "warning",
+        "summary": "Prometheus job missing (instance localhost:9090)",
+        "description": "A Prometheus job has disappeared VALUE = some_value"
+    },
+    {
+        "team": "infra_sre",
+        "serverity": "warning",
+        "summary": "Prometheus job missing (instance localhost:9090)",
+        "description": "A Prometheus job has disappeared VALUE = some_value"
+    },
+    {
+        "team": "infra_sre",
+        "serverity": "warning",
+        "summary": "Prometheus job missing (instance localhost:9090)",
+        "description": "A Prometheus job has disappeared VALUE = some_value"
+    },
+    {
+        "team": "infra_sre",
+        "serverity": "warning",
+        "summary": "Prometheus job missing (instance localhost:9090)",
+        "description": "A Prometheus job has disappeared VALUE = some_value"
+    },
+    {
+        "team": "infra_sre",
+        "serverity": "warning",
+        "summary": "Prometheus job missing (instance localhost:9090)",
+        "description": "A Prometheus job has disappeared VALUE = some_value"
+    },
+    {
+        "team": "infra_sre",
+        "serverity": "warning",
+        "summary": "Prometheus job missing (instance localhost:9090)",
+        "description": "A Prometheus job has disappeared VALUE = some_value"
+    }
+]
