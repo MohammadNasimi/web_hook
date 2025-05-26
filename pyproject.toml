@@ -1,18 +1,17 @@
-[project]
+[tool.poetry]
 name = "webhook"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "Mohammad Nasimi"}
-]
+authors = ["Mohammad Nasimi"]
 readme = "README.md"
-requires-python = ">=3.11"
-dependencies = [
-    "flask (>=3.1.0,<4.0.0)",
-    "dotenv (>=0.9.9,<0.10.0)"
-]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.1.1"
+dotenv = "^0.9.9"
+pyyaml = "^6.0.2"
 
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
